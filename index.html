@@ -3,213 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#050505" />
-  <meta name="description" content="Felipe – DJ & Producer. Neue Musik, Releases, Shows und Booking." />
-  <title>FELIPE — DJ & Producer</title>
+  <meta name="theme-color" content="#050607" />
+  <meta name="description" content="PHILIPE. — DJ, Producer & Live Artist." />
+  <title>PHILIPE. — DJ & Producer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="topbar" id="top">
+    <a class="identity" href="#top" aria-label="PHILIPE. Startseite">
+      <img src="Logo.jpg" alt="PHILIPE. Logo" />
+      <span class="identity-name">PHILIPE.</span>
+      <span class="identity-divider" aria-hidden="true">|</span>
+    </a>
 
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Felipe Startseite">FELIPE<span>.</span></a>
-    <button class="menu-button" aria-label="Menü öffnen" aria-expanded="false">
+    <button class="menu-button" type="button" aria-label="Menü öffnen" aria-expanded="false">
       <span></span><span></span>
     </button>
-    <nav class="nav" aria-label="Hauptnavigation">
-      <a href="#music">Music</a>
-      <a href="#shows">Shows</a>
-      <a href="#about">About</a>
-      <a href="#booking">Booking</a>
-      <a class="nav-cta" href="#latest">Listen now</a>
+
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="#live">LIVE</a>
+      <a href="#clubs">CLUBS &amp; FESTIVALS</a>
+      <a href="#produktionen">PRODUKTIONEN</a>
+      <a href="#management">MANAGEMENT</a>
+      <a href="#about">ÜBER MICH</a>
+      <a class="contact-link" href="contact.html">KONTAKT</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero section-pad">
-      <div class="hero-noise" aria-hidden="true"></div>
-      <div class="hero-orb orb-one" aria-hidden="true"></div>
-      <div class="hero-orb orb-two" aria-hidden="true"></div>
-
-      <div class="hero-copy reveal">
-        <p class="eyebrow">DJ • PRODUCER • ELECTRONIC MUSIC</p>
-        <h1>FEEL THE<br><span>SOUND.</span></h1>
-        <p class="hero-sub">New music. Late nights. No limits.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#latest">Listen now</a>
-          <a class="button button-ghost" href="#booking">Book Felipe</a>
-        </div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg hero-blue" aria-hidden="true"></div>
+      <div class="hero-bg hero-white" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="hero-location">DJ · PRODUCER · LIVE ARTIST</p>
+        <h1 id="hero-title">PHILIPE<span>.</span></h1>
+        <p class="hero-intro">Elektronische Musik zwischen Club, Festival und Produktion — klar, direkt und mit eigener Handschrift.</p>
+        <a class="hero-scroll" href="#live">Scroll <span>↓</span></a>
       </div>
-
-      <div class="hero-mark reveal" aria-hidden="true">
-        <span>F</span>
-      </div>
-
-      <div class="scroll-hint" aria-hidden="true">
-        <span>SCROLL</span><i></i>
+      <div class="hero-logo-mark" aria-hidden="true">
+        <img src="Logo.jpg" alt="" />
       </div>
     </section>
 
-    <section class="ticker" aria-label="Felipe Musik">
-      <div class="ticker-track">
-        <span>FELIPE • NEW MUSIC • LIVE SHOWS • FELIPE • NEW MUSIC • LIVE SHOWS • </span>
-        <span>FELIPE • NEW MUSIC • LIVE SHOWS • FELIPE • NEW MUSIC • LIVE SHOWS • </span>
+    <section class="statement section-pad">
+      <p class="section-index">01 / SELECTED</p>
+      <div class="statement-grid">
+        <h2>Music made<br>for movement.</h2>
+        <p>Minimalistisch im Look, energiegeladen im Sound. Diese Fläche ist als flexibler Einstieg gedacht und kann später mit echten Bildern, Videos und Releases gefüllt werden.</p>
       </div>
     </section>
 
-    <section class="latest section-pad" id="latest">
-      <div class="section-heading reveal">
-        <p class="eyebrow">LATEST RELEASE</p>
-        <h2>OUT NOW</h2>
-      </div>
-
-      <div class="latest-grid">
-        <div class="cover-art cover-main reveal" role="img" aria-label="Platzhalter für das Cover des neuesten Felipe Releases">
-          <div class="cover-lines"></div>
-          <div class="cover-meta">
-            <small>FELIPE</small>
-            <strong>AFTER<br>MIDNIGHT</strong>
-            <span>2026</span>
-          </div>
-        </div>
-
-        <div class="release-info reveal">
-          <p class="release-kicker">NEW SINGLE</p>
-          <h3>After Midnight</h3>
-          <p class="release-desc">A hypnotic late-night track built for dark rooms, loud systems and the moment the night really starts.</p>
-          <div class="platform-links">
-            <a href="#" target="_blank" rel="noopener">Spotify <span>↗</span></a>
-            <a href="#" target="_blank" rel="noopener">Apple Music <span>↗</span></a>
-            <a href="#" target="_blank" rel="noopener">SoundCloud <span>↗</span></a>
-            <a href="#" target="_blank" rel="noopener">YouTube <span>↗</span></a>
-          </div>
-          <button class="play-button" type="button" data-audio-demo aria-label="Demo abspielen">
-            <span class="play-icon">▶</span>
-            <span>PLAY PREVIEW</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="music section-pad" id="music">
-      <div class="section-heading split-heading reveal">
+    <section class="slider-section section-pad" id="live">
+      <div class="slider-heading">
         <div>
-          <p class="eyebrow">DISCOGRAPHY</p>
-          <h2>MUSIC</h2>
+          <p class="section-index">02 / HIGHLIGHTS</p>
+          <h2>Explore.</h2>
         </div>
-        <p>Latest tracks, edits and club releases from Felipe.</p>
-      </div>
-
-      <div class="release-grid">
-        <article class="release-card reveal">
-          <div class="cover-art cover-one">
-            <div class="cover-meta"><small>FELIPE</small><strong>AFTER<br>MIDNIGHT</strong></div>
-          </div>
-          <div class="card-row"><div><h3>After Midnight</h3><p>Single • 2026</p></div><a href="#">↗</a></div>
-        </article>
-
-        <article class="release-card reveal">
-          <div class="cover-art cover-two">
-            <div class="cover-meta"><small>FELIPE</small><strong>NEON<br>HEART</strong></div>
-          </div>
-          <div class="card-row"><div><h3>Neon Heart</h3><p>Single • 2026</p></div><a href="#">↗</a></div>
-        </article>
-
-        <article class="release-card reveal">
-          <div class="cover-art cover-three">
-            <div class="cover-meta"><small>FELIPE</small><strong>NO<br>SLEEP</strong></div>
-          </div>
-          <div class="card-row"><div><h3>No Sleep</h3><p>Club Edit • 2026</p></div><a href="#">↗</a></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="shows section-pad" id="shows">
-      <div class="section-heading reveal">
-        <p class="eyebrow">UPCOMING</p>
-        <h2>SHOWS</h2>
-      </div>
-
-      <div class="show-list">
-        <article class="show-item reveal">
-          <div class="show-date"><strong>12</strong><span>SEP</span></div>
-          <div class="show-place"><h3>Club Name</h3><p>Düsseldorf, Germany</p></div>
-          <div class="show-type">DJ SET</div>
-          <a class="show-link" href="#">Tickets ↗</a>
-        </article>
-        <article class="show-item reveal">
-          <div class="show-date"><strong>03</strong><span>OCT</span></div>
-          <div class="show-place"><h3>Night Festival</h3><p>Cologne, Germany</p></div>
-          <div class="show-type">FESTIVAL</div>
-          <a class="show-link" href="#">Tickets ↗</a>
-        </article>
-        <article class="show-item reveal">
-          <div class="show-date"><strong>31</strong><span>OCT</span></div>
-          <div class="show-place"><h3>Halloween Special</h3><p>Essen, Germany</p></div>
-          <div class="show-type">HEADLINER</div>
-          <a class="show-link" href="#">Tickets ↗</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="about section-pad" id="about">
-      <div class="about-art reveal" aria-hidden="true">
-        <div class="portrait-placeholder">
-          <div class="portrait-light"></div>
-          <span>F</span>
-          <small>ADD FELIPE PHOTO HERE</small>
+        <div class="slider-controls" aria-label="Slider Steuerung">
+          <button type="button" data-slide="prev" aria-label="Vorherige Karte">←</button>
+          <button type="button" data-slide="next" aria-label="Nächste Karte">→</button>
         </div>
       </div>
-      <div class="about-copy reveal">
-        <p class="eyebrow">ABOUT FELIPE</p>
-        <h2>MADE FOR<br>THE NIGHT.</h2>
-        <p>Felipe is a DJ and producer delivering energetic electronic sets built around groove, emotion and late-night atmosphere.</p>
-        <p>From intimate clubs to larger dance floors, every set is designed to build a journey — not just a playlist.</p>
-        <div class="about-stats">
-          <div><strong>20+</strong><span>RELEASES</span></div>
-          <div><strong>50+</strong><span>SHOWS</span></div>
-          <div><strong>∞</strong><span>NIGHTS</span></div>
-        </div>
+
+      <div class="card-rail" data-card-rail>
+        <article class="feature-card card-blue">
+          <div class="card-topline"><span>01</span><span>LIVE</span></div>
+          <div class="card-copy"><h3>LIVE</h3><p>Shows, Sets und ausgewählte Live-Momente.</p></div>
+        </article>
+        <article class="feature-card card-cream" id="clubs">
+          <div class="card-topline"><span>02</span><span>CLUBS &amp; FESTIVALS</span></div>
+          <div class="card-copy"><h3>CLUBS &amp;<br>FESTIVALS</h3><p>Clubnächte, Festival-Slots und besondere Locations.</p></div>
+        </article>
+        <article class="feature-card card-orange" id="produktionen">
+          <div class="card-topline"><span>03</span><span>PRODUKTIONEN</span></div>
+          <div class="card-copy"><h3>PRODUKTIONEN</h3><p>Eigene Tracks, Edits, Kollaborationen und kommende Releases.</p></div>
+        </article>
+        <article class="feature-card card-black" id="management">
+          <div class="card-topline"><span>04</span><span>MANAGEMENT</span></div>
+          <div class="card-copy"><h3>MANAGEMENT</h3><p>Booking, Anfragen und professionelle Zusammenarbeit.</p></div>
+        </article>
+        <article class="feature-card card-softblue" id="about">
+          <div class="card-topline"><span>05</span><span>ÜBER MICH</span></div>
+          <div class="card-copy"><h3>ÜBER MICH</h3><p>Artist-Profil, Hintergrund und musikalische Vision.</p></div>
+        </article>
+      </div>
+      <p class="swipe-note">Ziehen oder wischen, um mehr zu sehen.</p>
+    </section>
+
+    <section class="split-section section-pad">
+      <div class="split-panel split-dark">
+        <p class="section-index">03 / SOUND</p>
+        <h2>Club energy.<br>Clean identity.</h2>
+        <p>Der Aufbau bleibt bewusst großzügig und modular, damit spätere Pressebilder und Videos im Mittelpunkt stehen können.</p>
+      </div>
+      <div class="split-panel split-light">
+        <div class="mini-logo"><img src="Logo.jpg" alt="PHILIPE. Logo"></div>
+        <p>PHILIPE.</p>
       </div>
     </section>
 
-    <section class="social section-pad">
-      <div class="section-heading reveal">
-        <p class="eyebrow">FOLLOW</p>
-        <h2>STAY CONNECTED</h2>
-      </div>
-      <div class="social-grid reveal">
-        <a href="#" target="_blank" rel="noopener"><span>Instagram</span><strong>@felipe</strong><i>↗</i></a>
-        <a href="#" target="_blank" rel="noopener"><span>Spotify</span><strong>Felipe</strong><i>↗</i></a>
-        <a href="#" target="_blank" rel="noopener"><span>SoundCloud</span><strong>Felipe</strong><i>↗</i></a>
-        <a href="#" target="_blank" rel="noopener"><span>YouTube</span><strong>Felipe</strong><i>↗</i></a>
-      </div>
-    </section>
-
-    <section class="booking section-pad" id="booking">
-      <div class="booking-inner reveal">
-        <p class="eyebrow">BOOKING & INQUIRIES</p>
-        <h2>LET'S MAKE<br>SOME NOISE.</h2>
-        <p>For club bookings, festivals, private events and collaborations.</p>
-        <a class="booking-email" href="mailto:booking@felipe-music.com">booking@felipe-music.com <span>↗</span></a>
-      </div>
+    <section class="contact-teaser section-pad">
+      <p class="section-index">04 / CONTACT</p>
+      <h2>Let’s work<br>together.</h2>
+      <a href="contact.html">KONTAKT AUFNEHMEN <span>↗</span></a>
     </section>
   </main>
 
   <footer class="footer section-pad">
-    <a class="brand footer-brand" href="#top">FELIPE<span>.</span></a>
-    <div class="footer-links">
-      <a href="#">Instagram</a>
-      <a href="#">Spotify</a>
-      <a href="#">YouTube</a>
+    <div class="footer-left">
+      <img src="Logo.jpg" alt="PHILIPE. Logo" />
+      <strong>PHILIPE.</strong>
     </div>
-    <div class="footer-legal">
-      <span>© <span id="year"></span> Felipe</span>
-      <a href="#">Impressum</a>
-      <a href="#">Datenschutz</a>
+    <div class="footer-right">
+      <a href="#top">TOP ↑</a>
+      <span>© <span id="year"></span> PHILIPE.</span>
     </div>
   </footer>
 

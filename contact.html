@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050607" />
+  <title>Kontakt — PHILIPE.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="contact-page">
+  <header class="topbar">
+    <a class="identity" href="index.html" aria-label="PHILIPE. Startseite">
+      <img src="Logo.jpg" alt="PHILIPE. Logo" />
+      <span class="identity-name">PHILIPE.</span>
+      <span class="identity-divider" aria-hidden="true">|</span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Kontakt Navigation">
+      <a href="index.html#live">LIVE</a>
+      <a href="index.html#clubs">CLUBS &amp; FESTIVALS</a>
+      <a href="index.html#produktionen">PRODUKTIONEN</a>
+      <a href="index.html#management">MANAGEMENT</a>
+      <a href="index.html#about">ÜBER MICH</a>
+      <a class="contact-link active" href="contact.html">KONTAKT</a>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <div class="contact-glow" aria-hidden="true"></div>
+    <section class="contact-card" aria-labelledby="contact-title">
+      <p class="section-index">CONTACT</p>
+      <h1 id="contact-title">Schreib mir.</h1>
+      <p class="contact-sub">Für Bookings, Produktionen, Kooperationen oder sonstige Anfragen.</p>
+
+      <form id="contact-form" class="contact-form">
+        <label>
+          <span>E-MAIL ADRESSE</span>
+          <input type="email" name="email" autocomplete="email" placeholder="name@email.de" required>
+        </label>
+        <label>
+          <span>BETREFF</span>
+          <input type="text" name="subject" placeholder="Worum geht es?" required>
+        </label>
+        <label>
+          <span>NACHRICHT</span>
+          <textarea name="message" rows="7" placeholder="Deine Nachricht ..." required></textarea>
+        </label>
+        <button type="submit">MAIL ERSTELLEN <span>↗</span></button>
+        <p class="form-note">Beim Absenden öffnet sich dein Mailprogramm mit den eingegebenen Daten.</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
